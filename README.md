@@ -92,7 +92,7 @@ if(result==-1):
 ```
 ## Output
 ![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/4d99ba0c-6c0f-4437-83d1-1f902c72d037)
-![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/1f600740-3f11-47e9-81e9-6f91a41fc2f3)
+![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/0f9222dd-e5cd-401b-a755-34799fb99566)
 ![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/e18c1020-0fa6-43f0-b458-3d2cf2a3bcb6)
 
 
