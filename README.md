@@ -19,13 +19,47 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+def linearSearch(array,n,k):
+    for i in range(0,n):
+        if(array[i]==k):
+            return i
+    return -1
+array=eval(input())
+k=eval(input())
+n=len(array)
+array.sort()
+result=linearSearch(array,n,k)
+if(result==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result) 
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array= eval(input())
+array.sort()
+k= eval(input())
+result=binarySearchIter(array,k,0,len(array)-1)
+if(result==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
 
 
 
@@ -33,13 +67,36 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
+def BinarySearch(arr, k, low, high):
+    if high>=low:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]>k:
+            return BinarySearch(array, k, low, mid-1)
+        else:
+            return BinarySearch(array, k, mid+1,high)
+    else:        
+         return -1
+array= eval(input())
+array.sort()
+k= eval(input())
+result=BinarySearch(array,k,0,len(array)-1)
+if(result==-1):
+    print(array)
 
 
 
 
 
 ```
-## Sample Input and Output
+## Output
+![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/4d99ba0c-6c0f-4437-83d1-1f902c72d037)
+![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/1f600740-3f11-47e9-81e9-6f91a41fc2f3)
+![image](https://github.com/thenmozhi05/Search-Algorithm/assets/140684207/e18c1020-0fa6-43f0-b458-3d2cf2a3bcb6)
+
+
+
 
 
 
